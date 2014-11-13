@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.css">
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.4/jquery.mobile-1.4.4.min.js"></script>
+<style>
+	tr {
+    		border-bottom: 1px solid #d6d6d6;
+	}
+
+	.ui-table-columntoggle-btn {
+   	 display: none !important;
+	}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+<div data-role="page" id="pageone">
+  <div data-role="header">
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <table data-role="table" data-mode='columntoggle' class="ui-responsive">
+      <thead>
+			<tr><th>Links</th><th></tr>
+      </thead>
+      <tbody>
+	<tr><td><a href='http://cgm-cloud.azurewebsites.net/index.html'>Main CGM Nightscout</a></td></tr>
+	<tr><td><a href='http://ns-beta.azurewebsites.net/index.html'>Spare CGM Nightscout</a></td></tr>
+	<tr><td><a href='snapshot.php'>Quick view both CGMs past hour</a></td></tr>
+	<tr><td><a href='bg1.html'>Main CGM graph 1 hour</a></td></tr>
+	<tr><td><a href='prod.php?hours=1'>Main CGM past hour</a></td></tr>
+	<tr><td><a href='prod.php?hours=3'>Main CGM past 3 hours</a></td></tr>
+	<tr><td><a href='prod.php?hours=24'>Main CGM past 24 hours</a></td></tr>
+	<tr><td><a href='beta.php?hours=1'>Spare CGM past hour</a></td></tr>
+	<tr><td><a href='beta.php?hours=3'>Spare CGM past 3 hours</a></td></tr>
+	<tr><td><a href='beta.php?hours=24'>Spare CGM past 24 hours</a></td></tr>
+      </tbody>
+</table>
+  </div>
+
+</div> 
+
+</body>
+</html>
